@@ -1,0 +1,124 @@
+<mvc:View
+    controllerName="com.app.astra.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+>
+    <Page
+        id="page"
+        title="{i18n>title}"
+    >
+        <content />
+
+        <Table
+            id="idStarTable"
+            class="starsTable"
+            alternateRowColors="true"
+            items="{/Star}"
+            selectionChange="onSelectParticularStar"
+            mode="MultiSelect"
+        >
+            <headerToolbar>
+                <OverflowToolbar id="idStarTableHeader">
+                    <Title
+                        id="idTableHeaderTitle"
+                        text="Stars"
+                    />
+                    <ToolbarSpacer id="idTableHeaderSpacer" />
+                    
+                    <Button
+                        id="idPopOver"
+                        icon="sap-icon://popup-window"
+                        tooltip="PopOver"
+                        press="onOpenPopover"
+                        type="Up"
+                        ariaHasPopup="Dialog" />
+                    
+                    <Button
+                        id="idBtnCreate"
+                        icon="sap-icon://add"
+                        tooltip="Create Star"
+                        type="Success"
+                        press="onCreateBtnPress"
+                    />
+                     <Button
+                        id="idUpdateBtnStar"
+                        icon="sap-icon://edit"
+                        type="Accept"
+                        press="onPressUpdateBtn"
+                    />
+                    <Button
+                        id="idDeleteBtnStar"
+                        icon="sap-icon://delete"
+                        type="Reject"
+                        press="onPressDeleteBtn"
+                    />
+                </OverflowToolbar>
+            </headerToolbar>
+
+            <columns>
+                <Column id="ID">
+                    <Title
+                        id="ID1"
+                        text="ID"
+                    />
+                </Column>
+                <Column id="idStarName">
+                    <Title
+                        id="idStarName1"
+                        text="StarName"
+                    />
+                </Column>
+                <Column id="idConstellation">
+                    <Title
+                        id="idConstellation1"
+                        text="Constellation"
+                    />
+                </Column>
+                <Column id="idType">
+                    <Title
+                        id="idType1"
+                        text="Type"
+                    />
+                </Column>
+                 <Column id="idDescription">
+                    <Title
+                        id="idDescription1"
+                        text="Description"
+                    />
+                </Column>
+            </columns>
+            <items>
+                <ColumnListItem
+                    id="idStarTableColListItem"
+                    class="ColListItem1"
+                    type="Navigation"
+                    
+                >
+                    <cells>
+                        <Text
+                            id="idIDColValue"
+                            text="{ID}"
+                        />
+                        <Text
+                            id="idStarNameColValue"
+                            text="{StarName}"
+                        />
+                        <Text
+                            id="idConstellationColValue"
+                            text="{Constellation}"
+                        />
+                        <Text
+                            id="idTypeColValue"
+                            text="{Type}"
+                        />
+                        <Text
+                            id="idDescriptionColValue"
+                            text="{Description}"
+                        />
+                    </cells>
+                </ColumnListItem>
+            </items>
+        </Table>
+    </Page>
+</mvc:View>

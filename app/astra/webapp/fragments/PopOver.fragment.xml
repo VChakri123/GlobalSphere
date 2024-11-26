@@ -1,0 +1,80 @@
+<core:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core">
+	<Popover
+		id="myPopover"
+		showHeader="false"
+		contentWidth="320px"
+		contentHeight="500px"
+		placement="Bottom"
+		ariaLabelledBy="master-title">
+		<NavContainer
+			id="navCon">
+			<Page
+				id="master"
+				class="sapUiResponsivePadding--header"
+				title="STARS">
+				<List
+					id="list"
+                >
+					<StandardListItem
+                        id="StandardListItem"
+						title="Sirius"
+						description="The brightest star in the night sky"
+						type="Active"
+						icon="images/star.gif"
+						iconDensityAware="false"
+						iconInset="false" />
+
+                        <StandardListItem
+                        id="StandardListItem1"
+						title="Vega"
+						description="One of the brightest stars in the northern hemisphere"
+						type="Active"
+						icon="images/starr.gif"
+						iconDensityAware="false"
+						iconInset="false" />
+
+                        <StandardListItem
+                        id="StandardListItem2"
+						title="	Betelgeuse"
+						description="A large red star known for its reddish hue; it's nearing the end of its life"
+						type="Active"
+						icon="images/star2.gif"
+						iconDensityAware="false"
+						iconInset="false" />
+
+                        <StandardListItem
+                        id="StandardListItem3"
+						title="Rigel"
+						description="The brightest star in Orion"
+						type="Active"
+						icon="images/star3.gif"
+						iconDensityAware="false"
+						iconInset="false" />
+
+                        <StandardListItem
+                        id="StandardListItem4"
+						title="Polaris"
+						description="The North Star"
+						type="Active"
+						icon="images/star4.gif"
+						iconDensityAware="false"
+						iconInset="false" />
+
+                        <StandardListItem
+                        id="StandardListItem5"
+						title="Deneb"
+						description="One of the most luminous stars"
+						type="Active"
+						icon="images/star5.gif"
+						iconDensityAware="false"
+						iconInset="false" />
+				</List>
+			</Page>
+		</NavContainer>
+	</Popover>
+</core:FragmentDefinition>
+
+
+

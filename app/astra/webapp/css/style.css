@@ -1,0 +1,23 @@
+/* Enter your custom styles here */
+
+.starsTable{
+    background-color: gold;
+}
+.ColListItem1{
+    background-color: cornsilk;
+   
+}
+.sapMPopover .sapMIBar.sapMHeader-CTX {
+    background-color:lightgreen !important;
+}
+.sapMText {
+    color: rgb(236, 133, 37);
+}
+.sapMInputBaseInner{
+    background-color: rgb(242, 237, 237);
+}
+.sapUiFormTitleH4{
+    background-color: rgb(71, 242, 196);
+    color: rgb(22, 43, 31) !important;
+}
+

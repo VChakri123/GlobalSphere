@@ -339,11 +339,7 @@ sap.ui.define(
                 oModel.remove(sPath, {
                   success: function () {
                     successCount++;
-                    oThis
-                      .getView()
-                      .byId("idStarTable")
-                      .getBinding("items")
-                      .refresh();
+                    oThis.getView().byId("idStarTable").getBinding("items").refresh();
 
                     // Check if all deletions are successful
                     if (successCount === totalCount && !hasDisplayedMessage) {
